@@ -25,34 +25,34 @@ const GradientHeading = ({ children, className }: { children: React.ReactNode; c
 export default function Home() {
   const projects = [
     {
-      title: "Contactless Fingerprint Verification",
-      description: "Hybrid fingerprint verification system using CNN and Bezier-surface modeling. Achieved 93.75% accuracy with robust score-level fusion.",
-      tech: ["CNN", "Python", "Deep Learning"],
+      title: "Contactless Fingerprint Verification System",
+      description: "Engineered a contactless fingerprint verification system using CNNs and Bezier-surface modeling. Implemented score-level fusion combining deep learning-based CNN descriptors with traditional minutiae-based features using TensorFlow. Achieved 93.75% accuracy across 10K+ fingerprint samples.",
+      tech: ["Python", "TensorFlow", "OpenCV", "MLflow", "Git"],
     },
     {
-      title: "Face Verification using OpenAI",
-      description: "Facial recognition system using OpenAI vision models. Achieved 97% accuracy with sub‑second inference.",
-      tech: ["OpenAI API", "Computer Vision", "Python"],
+      title: "Image Mosaic Reconstruction Engine",
+      description: "Developed an image-processing pipeline that segments images into grids, classifies cells via intensity/color thresholds using PyTorch, and reconstructs mosaics from a curated tile dataset. Optimized with vectorized NumPy operations achieving 32x speedup. Evaluated using MSE/SSIM metrics across grid sizes (8x8 to 64x64).",
+      tech: ["Python", "PyTorch", "NumPy", "Gradio", "Git"],
     },
     {
-      title: "OTT Platform UI",
-      description: "UI clones of Netflix and Amazon Shopping with a collaborative‑filtering recommender system.",
-      tech: ["React Native", "JavaScript", "Recommender Systems"],
+      title: "LLM-Powered Document Q&A System",
+      description: "Built end-to-end RAG pipeline using LangChain and Hugging Face Transformers for intelligent document retrieval and question answering. Implemented semantic chunking and embedding generation with sentence-transformers; stored vectors in Pinecone for sub-100ms retrieval. Deployed on Azure with CI/CD pipeline.",
+      tech: ["LangChain", "Hugging Face", "Pinecone", "Azure", "MLflow"],
     },
   ];
 
   const experience = [
     {
       role: "Research and Development Intern",
-      company: "Speed Tech",
+      company: "Speed Tech, Pune",
       period: "Oct 2024 - Apr 2025",
-      description: "Designed and fine-tuned Generative AI and RAG models. Architected multi-agent AI system for financial analytics processing 10k+ daily transactions. Deployed solutions on Microsoft Azure.",
+      description: "Designed and fine-tuned Generative AI and RAG models using TensorFlow, PyTorch, and OpenAI APIs. Collaborated with a 5-member cross-functional team. Implemented semantic vector search and AI-driven pipelines. Architected multi-agent AI system for Data Analytics, integrating NLP chatbots and automated data pipelines processing 10K+ daily transactions.",
     },
     {
       role: "Cloud Engineering Intern",
-      company: "Thyssenkrupp Industrial Solutions",
+      company: "Thyssenkrupp Industrial Solutions, Mumbai",
       period: "Feb 2023 - Jul 2023",
-      description: "Automated cloud resource provisioning across 3 regions, reducing deployment time by 40%. Studied cloud risk management and resource pooling.",
+      description: "Contributed to automating cloud resource provisioning across 3 global regions, reducing deployment time. Partnered with cloud engineers and security specialists to support global provisioning processes and build knowledge of cloud risk management, MFA, and resource optimization.",
     },
   ];
 
@@ -63,9 +63,14 @@ export default function Home() {
     { icon: <Cpu className="h-8 w-8" />, name: "TensorFlow" },
     { icon: <Terminal className="h-8 w-8" />, name: "PyTorch" },
     { icon: <Cloud className="h-8 w-8" />, name: "Azure" },
-    { icon: <Server className="h-8 w-8" />, name: "Docker" },
+    { icon: <Server className="h-8 w-8" />, name: "AWS" },
     { icon: <Database className="h-8 w-8" />, name: "SQL" },
     { icon: <Globe className="h-8 w-8" />, name: "LangChain" },
+    { icon: <Layers className="h-8 w-8" />, name: "Hugging Face" },
+    { icon: <Code className="h-8 w-8" />, name: "C++" },
+    { icon: <Globe className="h-8 w-8" />, name: "JavaScript" },
+    { icon: <Terminal className="h-8 w-8" />, name: "MLflow" },
+    { icon: <Database className="h-8 w-8" />, name: "Pinecone" },
   ];
 
   const certifications: StackItem[] = [
@@ -74,8 +79,8 @@ export default function Home() {
       content: (
         <div className="text-center">
           <h3 className="text-xl font-bold text-purple-400">Research Publication</h3>
-          <p className="mt-2 text-neutral-400">Contactless Fingerprint Verification Using CNN</p>
-          <p className="mt-4 text-sm text-neutral-500">IJSRED</p>
+          <p className="mt-2 text-neutral-400">Co-authored &quot;Contactless Fingerprint Verification Using CNN&quot;</p>
+          <p className="mt-4 text-sm text-neutral-500">International Journal of Scientific Research and Engineering Development (IJSRED)</p>
         </div>
       ),
     },
@@ -83,13 +88,22 @@ export default function Home() {
       id: 2,
       content: (
         <div className="text-center">
-          <h3 className="text-xl font-bold text-pink-400">Python Course</h3>
-          <p className="mt-2 text-neutral-400">GUVI IITM Research Park</p>
+          <h3 className="text-xl font-bold text-orange-400">Generative AI Fundamentals</h3>
+          <p className="mt-2 text-neutral-400">Academy Accreditation — Databricks</p>
         </div>
       ),
     },
     {
       id: 3,
+      content: (
+        <div className="text-center">
+          <h3 className="text-xl font-bold text-pink-400">Python Course</h3>
+          <p className="mt-2 text-neutral-400">GUVI — IITM Research Park</p>
+        </div>
+      ),
+    },
+    {
+      id: 4,
       content: (
         <div className="text-center">
           <h3 className="text-xl font-bold text-blue-400">MySQL Bootcamp</h3>
@@ -98,11 +112,11 @@ export default function Home() {
       ),
     },
     {
-      id: 4,
+      id: 5,
       content: (
         <div className="text-center">
-          <h3 className="text-xl font-bold text-green-400">Agile Metrics</h3>
-          <p className="mt-2 text-neutral-400">Project Management</p>
+          <h3 className="text-xl font-bold text-green-400">Agile Metrics for Project Management</h3>
+          <p className="mt-2 text-neutral-400">Udemy</p>
         </div>
       ),
     },
@@ -134,20 +148,21 @@ export default function Home() {
       <section className="container mx-auto px-4 py-24">
         <GradientHeading>About Me</GradientHeading>
         <div className="mx-auto max-w-3xl text-center text-lg text-neutral-300 leading-relaxed">
+          <p className="mb-4">
+            Hi, I&apos;m Yash Lomate. I&apos;m currently pursuing my Master&apos;s in Artificial Intelligence. I am passionate about teaching computers to learn from data and make better decisions — like how people learn from experience.
+          </p>
           <p className="mb-8">
-            Passionate about AI/ML with hands-on experience in generative AI, RAG systems, and deep learning model deployment. 
-            Proven track record in building NLP chatbots and computer vision applications using TensorFlow, PyTorch, and OpenAI APIs. 
-            Seeking full-time roles in Machine Learning Engineering or AI Research.
+            Passionate about AI/ML and graduate student with hands-on experience in generative AI, RAG systems, and deep learning model deployment.
           </p>
           <div className="grid gap-6 md:grid-cols-2 text-left">
             <div className="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
               <h3 className="text-xl font-bold text-purple-400 mb-2">Northeastern University</h3>
               <p className="text-white">Master of Science in Artificial Intelligence</p>
-              <p className="text-sm text-neutral-400">Sep 2025 - Present | GPA: 3.8/4.0</p>
+              <p className="text-sm text-neutral-400">Sep 2025 - Present | GPA: 4.0/4.0</p>
             </div>
             <div className="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
               <h3 className="text-xl font-bold text-pink-400 mb-2">Savitribai Phule Pune University</h3>
-              <p className="text-white">Bachelor of Engineering in Computer Engineering</p>
+              <p className="text-white">B.E. in Computer Engineering — D.Y. Patil College of Engineering</p>
               <p className="text-sm text-neutral-400">Sep 2020 - Jul 2024 | GPA: 3.55/4.0</p>
             </div>
           </div>
@@ -230,7 +245,7 @@ export default function Home() {
             <Github className="h-6 w-6 text-white" />
           </Lanyard>
         </div>
-        <p className="mt-8 text-neutral-500">Yash Lomate | (207) 408-3655</p>
+        <p className="mt-8 text-neutral-500">Yash Lomate | +1 (207) 408-3655</p>
       </section>
     </main>
   );
